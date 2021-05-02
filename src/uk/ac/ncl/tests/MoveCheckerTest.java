@@ -23,7 +23,7 @@ class MoveCheckerTest {
         cells = new Cell[BOARD_SIZE][BOARD_SIZE];
         moveChecker = new MoveChecker(cells);
         for (int i = 0; i < BOARD_SIZE; i++) {
-            for (int j = 0; j < BOARD_SIZE; j+) {
+            for (int j = 0; j < BOARD_SIZE; j++) {
                 CellStatus cellStatus = CellStatus.EMPTY;
                 Cell tempEl = new Cell(cellStatus, new JButton(), i, j);
                 if ((i == 3 && j == 4) || (i == 4 && j == 3)) {
