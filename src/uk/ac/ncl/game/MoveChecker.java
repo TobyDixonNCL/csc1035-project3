@@ -36,7 +36,7 @@ public class MoveChecker {
         ArrayList<Cell> potentialMoves = findPotentialMoves(cellStatus);
         int max_score = 0;
         Cell opponentsMove = null;
-        for (int i = 0; i <= potentialMoves.size(); i++){
+        for (int i = 0; i <= potentialMoves.size() - 1; i++){
             if (potentialMoves.get(i).getMove().getScore() > max_score){
                 opponentsMove = potentialMoves.get(i);
 
