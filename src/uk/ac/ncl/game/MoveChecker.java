@@ -38,8 +38,8 @@ public class MoveChecker {
         Cell opponentsMove = null;
         for (int i = 0; i <= potentialMoves.size() - 1; i++){
             if (potentialMoves.get(i).getMove().getScore() > max_score){
+                max_score = potentialMoves.get(i).getMove().getScore();
                 opponentsMove = potentialMoves.get(i);
-
             }
         }
         return opponentsMove;
@@ -78,7 +78,7 @@ public class MoveChecker {
             for (int j = 0; j < BOARD_SIZE; j++) {
                 if (this.cells[i][j].getValue() == CellStatus.EMPTY){
                     if (this.cells[i][j].isLegal(colour, cells)){
-                        potentialMoves.add(this.cells[j][i]);
+                        potentialMoves.add(this.cells[i][j]);
                     }
                 }
             }
