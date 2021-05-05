@@ -116,7 +116,7 @@ public class Cell {
         boolean isLegal = false;
         int score = 0;
         ArrayList<DirectedMove> moves = new ArrayList<DirectedMove>();
-        int[][] DIRS = {{-1, -1}, {-1, 0}, {-1, 1}, {0, -1}, {1, 1}, {1, 0}, {1, -1}};
+        int[][] DIRS = {{-1, -1}, {-1, 0}, {-1, 1}, {0, -1}, {1, 1}, {1, 0}, {1, -1}, {0, 1}};
 
         for (int[] dir : DIRS) {
             int temp_score = 0;
