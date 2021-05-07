@@ -42,8 +42,8 @@ public class Cell {
     public Cell(CellStatus value, JButton jButton, int row, int column) {
         this.value = value;
         this.jButton = jButton;
-        this.row = column;
-        this.column = row;
+        this.row = row;
+        this.column = column;
         this.move = null;
     }
 
