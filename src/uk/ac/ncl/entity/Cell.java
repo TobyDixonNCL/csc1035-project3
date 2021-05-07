@@ -137,7 +137,7 @@ public class Cell {
                     temp_score += 1; // Increase score each time you continue
                     if (0 <= d_col && d_col < BOARD_SIZE && 0 <= d_row && d_row < BOARD_SIZE
                             && cells[d_row][d_col].getValue() != CellStatus.EMPTY) { // Check that you are still on the board and if you haven't hit an empty tile
-                        if (cells[d_row][d_col].getValue() == colour) { // if the tile you are at is the same colour as your team then finish
+                        if (cells[d_row][d_col].getValue() == colour) { // if the tile you are at is the same colour as your team then add directed move
                             isLegal = true;
                             score = temp_score;
                             moves.add(new DirectedMove(cells[d_row][d_col], dir));
