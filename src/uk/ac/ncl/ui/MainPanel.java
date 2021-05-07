@@ -90,7 +90,7 @@ public class MainPanel extends JFrame {
      * @param moveChecker
      */
     private void CheckNextMove(MoveChecker moveChecker){
-        if (missedMoves > 1) {
+        if (missedMoves > 0) {
             JOptionPane.showMessageDialog(this, moveChecker.getFinalScore());
             System.exit(0);
         }
