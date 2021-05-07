@@ -117,7 +117,7 @@ public class MoveChecker {
         }
         if (darks == lights)
             return "The game is over. It is a draw. Each player has " + darks + " pieces";
-        String winner = lights < darks ? "Light" : "Dark";
+        String winner = lights > darks ? "Light" : "Dark";
         return "The game is over. "
                 + winner + " has won with the result: Dark - " + darks + " Light - " + lights;
     }
