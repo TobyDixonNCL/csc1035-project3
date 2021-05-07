@@ -128,6 +128,7 @@ public class MainPanel extends JFrame {
                 setUpTimer(taskPerformer);
             } else {
                 missedMoves += 1;
+                CheckNextMove(moveChecker);
             }
         }
         else{
